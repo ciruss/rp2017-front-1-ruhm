@@ -4,6 +4,7 @@ import { Route, Switch, BrowserRouter, browserHistory } from 'react-router-dom'
 
 import Home from './components/Home'
 import NotFound from './components/NotFound'
+import Topics from './components/Topics'
 
 import './app.scss'
 
@@ -12,6 +13,7 @@ render(
     <div id='content-wrapper'>
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/topics' component={Topics} />
         <Route component={NotFound} />
       </Switch>
     </div>
